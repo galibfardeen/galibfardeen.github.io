@@ -215,7 +215,7 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 876px) {
   .profile {
     width: 30%;
 
@@ -229,7 +229,7 @@ ul.task-list input[type="checkbox"] {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
 
   a {
     color: inherit;
@@ -1422,4 +1422,13 @@ figure.cover {
   a.cover-link:hover {
     color: #23212d !important;
   }
+}
+
+
+
+/* make last name extra bold in the main title */
+.post-title .font-weight-bold2,
+h1.post-title .font-weight-bold2 {
+  font-weight: 1200; /* very bold — change to 700/800 if too heavy */
+  letter-spacing: 0.5px; /* optional — gives a bit of emphasis */
 }
