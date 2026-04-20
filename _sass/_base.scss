@@ -1353,7 +1353,7 @@ ninja-keys::part(ninja-input-wrapper) {
 figure.cover {
   display: inline-block;
   text-align: center;
-  margin: 0.5rem; /* adjust as needed */
+  margin: 0.5rem;
 
   img {
     vertical-align: bottom;
@@ -1418,17 +1418,44 @@ figure.cover {
     background-color: #b0abb3;
   }
 
-  /* mouse over link */
   a.cover-link:hover {
     color: #23212d !important;
   }
 }
 
-
-
 /* make last name extra bold in the main title */
 .post-title .font-weight-bold2,
 h1.post-title .font-weight-bold2 {
-  font-weight: 1200; /* very bold — change to 700/800 if too heavy */
-  letter-spacing: 0.5px; /* optional — gives a bit of emphasis */
+  font-weight: 1200;
+  letter-spacing: 0.5px;
+}
+
+/* ===== center profile avatar above title on home/about only ===== */
+.home .profile,
+.about .profile {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 0 1.5rem 0 !important;
+  text-align: center !important;
+}
+
+/* Make sure address lines display under the avatar when centered */
+.home .profile .address p,
+.about .profile .address p {
+  display: block !important;
+}
+
+/* Avatar styling (circle, size, centered). Adjust width/height if you prefer */
+.home .profile img.avatar,
+.about .profile img.avatar,
+.home .profile .avatar,
+.about .profile .avatar {
+  display: inline-block !important;
+  float: none !important;
+  margin: 0 auto 1rem auto !important;
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15) !important;
 }
