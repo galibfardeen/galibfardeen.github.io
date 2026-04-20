@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: home
 title: about
 permalink: /
 subtitle: Research Assistant | <a href='https://iwfm.buet.ac.bd/site/'> | M.Sc. Student | Institute of Water and Flood Management, BUET</a> 
@@ -13,8 +13,12 @@ profile:
     <p>Institutute of Water and Flood  Management, BUET</p>
     <p></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false
 social: true # includes social icons at the bottom of the page
+
+show_research: true
+show_publications: true
+show_cv: true
 
 announcements:
   enabled: false # includes a list of news items

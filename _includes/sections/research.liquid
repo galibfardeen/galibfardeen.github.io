@@ -1,0 +1,31 @@
+<section id="research" class="post mt-5 pt-4" style="border-top: 1px solid var(--global-divider-color);">
+  <h2><a href="{{ '/research/' | relative_url }}" style="color: inherit">research</a></h2>
+
+  <p>
+    My primary research investigates the dynamic behaviour of large-scale hyperbolic cooling towers under seismic and wind loading,
+    with a focus on the Rooppur Nuclear Power Plant in Bangladesh — the country's first nuclear power plant, located near the
+    seismically active Madhupur Fault.
+  </p>
+
+  <p>
+    Using <strong>ABAQUS</strong>, I developed detailed finite element models of the 175 m cooling tower and compared two column
+    modelling strategies: an <strong>Embedded Reinforcement</strong> approach and a <strong>Simplified Timoshenko Beam</strong> approach.
+    Both models were subjected to the 2001 Bhuj/Kachchh earthquake and wind loads calculated via Greiner's equation per BNBC-2020.
+  </p>
+
+  <div class="row mt-3 mb-2 justify-content-center">
+    <div class="col-sm-8">
+      {% include figure.liquid path="assets/img/cooling tower.png" title="Stress analysis of hyperbolic cooling tower" class="img-fluid rounded z-depth-1" %}
+      <div class="caption">Stress analysis of the Rooppur NPP cooling tower under dynamic loading — comparing Embedded Reinforcement and Simplified Column modelling approaches.</div>
+    </div>
+  </div>
+
+  <p>
+    <strong>Ongoing work</strong> includes CFRP-strengthened beam-column connections under monotonic and cyclic loading
+    <em>(in submission, 2025)</em> and impact behaviour of pressurised uPVC pipes <em>(in preparation, 2025)</em>.
+  </p>
+
+  <a href="{{ '/research/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" style="border: 1px solid var(--global-theme-color); color: var(--global-theme-color);">
+    read more &rarr;
+  </a>
+</section>

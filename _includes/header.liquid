@@ -47,14 +47,24 @@
           {% endfor %}
 
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+          <li class="nav-item {% if page.permalink == '/' and page.layout != 'home' %}active{% endif %}" {% if page.layout == 'home' %}id="nav-about"{% endif %}>
+            <a class="nav-link" href="{{ '/' | relative_url }}{% if page.layout == 'home' %}#about{% endif %}">
               {{- about_title }}
-              {% if page.permalink == '/' %}
-                <span class="sr-only">(current)</span>
-              {% endif %}
             </a>
           </li>
+
+          <!-- Single-page anchor links (homepage only) -->
+          {% if page.permalink == '/' and page.layout == 'home' %}
+            <li class="nav-item">
+              <a class="nav-link" href="#research">research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publications">publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cv">cv</a>
+            </li>
+          {% endif %}
 
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}

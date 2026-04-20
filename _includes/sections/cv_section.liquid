@@ -1,0 +1,29 @@
+<section id="cv" class="post mt-5 pt-4" style="border-top: 1px solid var(--global-divider-color);">
+  <h2>
+    <a href="{{ '/cv/' | relative_url }}" style="color: inherit">cv</a>
+    <a href="{{ '_pages/CV-Md Asadullahil Galib Fardin.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="float-right" style="font-size: 1rem;">
+      <i class="fa-solid fa-file-pdf"></i>
+    </a>
+  </h2>
+  <div class="cv">
+    {% for entry in site.data.cv %}
+      <a class="anchor" id="{{ entry.title }}"></a>
+      <div class="card mt-3 p-3">
+        <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+        <div>
+          {% if entry.type == 'list' %}
+            {% include cv/list.liquid %}
+          {% elsif entry.type == 'map' %}
+            {% include cv/map.liquid %}
+          {% elsif entry.type == 'nested_list' %}
+            {% include cv/nested_list.liquid %}
+          {% elsif entry.type == 'time_table' %}
+            {% include cv/time_table.liquid %}
+          {% else %}
+            {{ entry.contents }}
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
