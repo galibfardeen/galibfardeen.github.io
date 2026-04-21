@@ -1,3 +1,31 @@
+// Slide in profile sidebar after scrolling past the about section
+(function () {
+  const sidebar = document.getElementById("profile-sidebar");
+  const about = document.getElementById("about");
+  if (sidebar && about) {
+    window.addEventListener("scroll", function () {
+      const aboutBottom = about.getBoundingClientRect().bottom;
+      if (aboutBottom < 60) {
+        sidebar.classList.add("visible");
+      } else {
+        sidebar.classList.remove("visible");
+      }
+    });
+  }
+})();
+
+// Fade in navbar brand name after scrolling past the page title
+(function () {
+  const brand = document.getElementById("navbar-brand-home");
+  const title = document.querySelector(".post-title");
+  if (brand && title) {
+    window.addEventListener("scroll", function () {
+      const titleBottom = title.getBoundingClientRect().bottom;
+      brand.style.opacity = titleBottom < 0 ? "1" : "0";
+    });
+  }
+})();
+
 // Scrollspy: highlight navbar anchor links as sections scroll into view
 (function () {
   const sections = ["about", "research", "publications", "cv"];

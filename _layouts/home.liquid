@@ -3,21 +3,29 @@ layout: default
 ---
 <div class="post">
   <section id="about">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        <span class="font-weight-bold2">{{ site.last_name }}</span>
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+  <div class="about-flex">
 
-  <article>
+    <!-- Left: name, subtitle, bio -->
+    <div class="about-left">
+      <header class="post-header">
+        <h1 class="post-title">
+          {% if site.title == 'blank' %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+            <span class="font-weight-bold2">{{ site.last_name }}</span>
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+        <p class="desc">{{ page.subtitle }}</p>
+      </header>
+      <article>
+        <div>{{ content }}</div>
+      </article>
+    </div>
+
+    <!-- Right: profile image, address, socials -->
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div class="about-right">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
@@ -25,8 +33,7 @@ layout: default
           {% else %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
@@ -35,20 +42,12 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        {% if page.social %}{% include social_list.liquid %}{% endif %}
       </div>
     {% endif %}
 
-    <!-- About -->
-    <div class="clearfix">{{ content }}</div>
+  </div>
   </section>
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
 
     <!-- Research -->
     {% if page.show_research %}
@@ -69,6 +68,22 @@ layout: default
       {% include newsletter.liquid center=true %}
     {% endif %}
   </article>
+</div>
+
+<!-- Profile sidebar card (slides in after scrolling past about) -->
+<div id="profile-sidebar" class="profile-sidebar">
+  <img src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}"
+       alt="{{ site.first_name }} {{ site.last_name }}"
+       class="sidebar-avatar" />
+  <div class="sidebar-name">Md Asadullahil Galib <span style="font-weight: 700;">Fardin</span></div>
+  <div class="sidebar-desc">M.Sc. Student &amp; Research Assistant<br>IWFM, BUET</div>
+  <div class="sidebar-links">
+    <a href="{{ '/' | relative_url }}" title="Website"><i class="fa-solid fa-house"></i></a>
+    {% if site.data.socials.github_username %}<a href="https://github.com/{{ site.data.socials.github_username }}" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
+    {% if site.data.socials.email %}<a href="mailto:{{ site.data.socials.email | encode_email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
+    {% if site.data.socials.linkedin_username %}<a href="https://linkedin.com/in/{{ site.data.socials.linkedin_username }}" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif %}
+    {% if site.data.socials.scholar_userid %}<a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
+  </div>
 </div>
 
 <script src="{{ '/assets/js/scrollspy.js' | relative_url }}"></script>
