@@ -15,7 +15,7 @@
       institution: Rajshahi University of Engineering and Technology (RUET), Bangladesh
       year: Aug 2024
       description:
-        - CGPA: 3.31/4.00
+        - "CGPA: 3.31/4.00"
 
 - title: Standardized Scores
   type: time_table
@@ -23,8 +23,8 @@
     - title: IELTS Academic Test
       year: Nov 2025
       description:
-        - Overall Band Score: 8.0
-        - "Listening: 9.0 | Reading: 8.5 | Writing: 7.5 | Speaking: 6.5"
+        - "Overall Band Score: 8.0"
+        - "Listening: 9.0 &nbsp;·&nbsp; Reading: 8.5 &nbsp;·&nbsp; Writing: 7.5 &nbsp;·&nbsp; Speaking: 6.5"
 
 - title: Research Experience
   type: time_table
@@ -46,13 +46,13 @@
     - title: Journal Articles
       year: 2025
       description:
-        - "Chy, I.U.A., Fardin, M.A.G., Awall, M.R. et al. Dynamic analysis of cooling tower considering two different column modeling approaches. Journal of Building Rehabilitation, 10, 120. DOI: 10.1007/s41024-025-00632-6. [Published]"
-        - "Rony, K.R.I., Fardin, M.A.G., Chy, I.U.A. et al. Modelling of CFRP Strengthened Beam-Column Connections Under Monotonic and Cyclic Loading. Journal of Steel Construction Research. [In Submission]"
-        - "Afroz, Rownok, Fardin, M.A.G. et al. Impact Behaviour of Pressurised uPVC Pipe: An Experimental and Numerical Analysis. [In Preparation]"
+        - "Chy, I. U. A., Fardin, M. A. G., Awall, M. R., & Biswas, A. (2025). Dynamic analysis of cooling tower considering two different column modeling approaches. <em>Journal of Building Pathology and Rehabilitation</em>, <em>10</em>, 120. https://doi.org/10.1007/s41024-025-00632-6 [Published]"
+        - "Islam, K. R., & Fardin, M. A. G. (2025). Numerical investigation on behavior of CFRP strengthened beam-column steel joint under compressive and cyclic loading. <em>Advances in Civil Engineering</em>. [Under Review]"
+        - "Afroz, M. R., Ahmed, T. U., Fardin, M. A. G., Bashar, J. B., Ahmed, H., Raphi, S. H., & Akhi, A. H. (2025). Impact behavior of pressurized uPVC pipe: An experimental and numerical analysis. [In Preparation]"
     - title: Conference Papers
       year: 2024
       description:
-        - "Ahmad Chy, I.U., Fardin, M.A.G., Awall, M.R. and Biswas, A. Dynamic Analysis of the Hyperbolic Cooling Tower at Rooppur Nuclear Power Plant. Proceedings of the 7th International Conference on Advances in Civil Engineering (ICACE-2024), CUET, Chittagong, Bangladesh, ID: 495, 12-14 December 2024."
+        - "Chy, I. U. A., Fardin, M. A. G., Awall, M. R., & Biswas, A. (2024, December 12–14). Dynamic analysis of the hyperbolic cooling tower at Rooppur Nuclear Power Plant [Paper presentation]. <em>Proceedings of the 7th International Conference on Advances in Civil Engineering (ICACE-2024)</em> (Paper ID: 495). CUET, Chittagong, Bangladesh."
 
 - title: Technical Skills
   type: nested_list
@@ -76,5 +76,5 @@
 - title: References
   type: list
   contents:
-    - "<strong>Dr. Md. Robiul Awall</strong> — Professor, Dept. of Civil Engineering, RUET. Email: robi95@ce.ruet.ac.bd | Phone: +880-1711302330"
-    - "<strong>Zahidul Islam</strong> — Assistant Professor, Dept. of Civil Engineering, RUET. Email: zahid@ce.ruet.ac.bd"
+    - "<strong>Dr. Md. Robiul Awall</strong><br>Professor, Dept. of Civil Engineering<br>Rajshahi University of Engineering and Technology (RUET)<br>Email: robi95@ce.ruet.ac.bd<br>Phone: +880-1711302330"
+    - "<strong>Zahidul Islam</strong><br>Assistant Professor, Dept. of Civil Engineering<br>Rajshahi University of Engineering and Technology (RUET)<br>Email: zahid@ce.ruet.ac.bd"
