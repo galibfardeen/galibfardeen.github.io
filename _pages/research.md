@@ -26,8 +26,6 @@ nav_order: 3
   </div>
 </div>
 
----
-
 <!-- CFRP — images LEFT, text RIGHT -->
 <div class="research-flex-row" style="display: flex; gap: 1.8rem; align-items: flex-start; margin-bottom: 2.2rem;">
   <div class="research-img-col" style="flex-shrink: 0; width: 340px;">
@@ -52,8 +50,6 @@ nav_order: 3
   </div>
 </div>
 
----
-
 <!-- uPVC — text LEFT, images RIGHT -->
 <div class="research-flex-row" style="display: flex; gap: 1.8rem; align-items: flex-start; margin-bottom: 1.2rem;">
   <div style="flex: 1; min-width: 0;">
@@ -77,8 +73,6 @@ nav_order: 3
     <p style="font-size: 0.72rem; color: var(--global-text-color-light); text-align: center; margin-top: 0.4rem;">Test rig, contact force response, and plastic deformation zones (ABAQUS).</p>
   </div>
 </div>
-
----
 
 ## Publications
 
