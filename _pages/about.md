@@ -6,7 +6,7 @@ subtitle: Research Assistant | Civil Engineering Graduate | <a href='https://iwf
 
 profile:
   align: right
-  image: galib.jpg
+  image: galib-new.jpg
   image_circular: True # crops the image to make it circular
   more_info: >
     <p style="text-align: center;">Computational Lab, Room-106</p>
@@ -34,7 +34,7 @@ latest_posts:
 
 Hello there! I am Fardin, a current M.S. student in Climate Modelling and Risk Management and a Civil Engineering graduate from RUET. I work as a Research Assistant at the Institute of Water and Flood Management, BUET.
 
-My research interests span <b>Structural Dynamics</b>, <b>Finite Element Analysis</b>, <b>Seismic & Wind Loading</b>, <b>Structural Health Monitoring</b>, and <b>Infrastructure Risk Analysis</b>. I enjoy working at the intersection of computational methods and real-world infrastructure problems.
+My research interests span <b>Coastal and Offshore Engineering</b>, <b>Structural Analysis and Hydrodynamics</b>, <b>Seismic & Wind Loading</b>, <b>Structural Health Monitoring</b>, and <b>Infrastructure Risk Analysis</b>. I am experienced in softwares like ABAQUS, Delft3D, HEC-RAS, ETABS, SAP2000, SNAP, and ArcGIS Pro. 
 
 In my free time, I love long walks, studying history, and watching movies.
 

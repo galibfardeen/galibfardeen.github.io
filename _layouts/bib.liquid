@@ -48,7 +48,15 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      {%- if entry.html -%}
+        <a href="{{ entry.html }}" target="_blank">{{ entry.title }}</a>
+      {%- elsif entry.doi -%}
+        <a href="https://doi.org/{{ entry.doi }}" target="_blank">{{ entry.title }}</a>
+      {%- else -%}
+        {{ entry.title }}
+      {%- endif -%}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -85,10 +93,10 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <strong>
             {{- author.first }}
             {{ author_last_html -}}
-          </em>
+          </strong>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
