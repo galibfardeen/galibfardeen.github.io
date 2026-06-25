@@ -71,32 +71,11 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/r4_nuclear_infrastructure/";
             },},{
-        id: 'social-email',
-        title: 'email',
+        id: 'social-scholar',
+        title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%66%61%72%64%69%6E.%63%69%76%69%6C%77%6F%72%6B%73@%67%6D%61%69%6C.%63%6F%6D", "_blank");
-        },
-      },{
-        id: 'social-facebook',
-        title: 'Facebook',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://facebook.com/forever.fardin", "_blank");
-        },
-      },{
-        id: 'social-github',
-        title: 'GitHub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/galibfardeen", "_blank");
-        },
-      },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.linkedin.com/in/md-asadullahil-galib-fardin", "_blank");
+          window.open("https://scholar.google.com/citations?user=vX1aFYYAAAAJ", "_blank");
         },
       },{
         id: 'social-orcid',
@@ -106,11 +85,25 @@ ninja.data = [{
           window.open("https://orcid.org/0009-0008-9985-3754", "_blank");
         },
       },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://github.com/galibfardeen", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%66%61%72%64%69%6E.%63%69%76%69%6C%77%6F%72%6B%73@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/galibfardin", "_blank");
         },
       },{
       id: 'light-theme',
